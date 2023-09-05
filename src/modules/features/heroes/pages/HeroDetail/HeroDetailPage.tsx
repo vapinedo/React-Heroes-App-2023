@@ -1,6 +1,6 @@
 const DCHeroesPath = "src/assets/dc-heroes/";
 
-const HeroCard = ({ hero }) => {
+const HeroDetailPage = ({ hero }) => {
   return (
     <article className="col">
       <div className="card h-100">
@@ -13,4 +13,4 @@ const HeroCard = ({ hero }) => {
     </article>
   )
 }
-export default HeroCard
+export default HeroDetailPage

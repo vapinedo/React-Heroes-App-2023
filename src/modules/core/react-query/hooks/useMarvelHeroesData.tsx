@@ -1,11 +1,11 @@
 import axios from "axios"
 import { useQuery } from "react-query"
 
-const fetchFn = () => axios.get(import.meta.env.VITE_DC_HEROES);
+const fetchFn = () => axios.get(import.meta.env.VITE_MARVEL_HEROES);
 
-const useDCHeroesData = (onSuccess: any, onError: any) => {
+const useMarvelHeroesData = (onSuccess: any, onError: any) => {
     return useQuery(
-        "dc-heroes",
+        "marvel-heroes",
         fetchFn,
         {
             onError,
@@ -18,4 +18,4 @@ const useDCHeroesData = (onSuccess: any, onError: any) => {
     );
 }
 
-export default useDCHeroesData
+export default useMarvelHeroesData
