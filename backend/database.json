@@ -1,0 +1,56 @@
+{
+    "dc-heroes": [
+        {
+            "name": "Batman",
+            "image": "batman.png",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos accusamus, dolore aspernatur totam quos doloremque officia itaque nemo at earum."
+        },
+        {
+            "name": "Catwoman",
+            "image": "catwoman.png",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos accusamus, dolore aspernatur totam quos doloremque officia itaque nemo at earum."
+        },
+        {
+            "name": "Superman",
+            "image": "superman.png",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos accusamus, dolore aspernatur totam quos doloremque officia itaque nemo at earum."
+        },
+        {
+            "name": "Wonder Woman",
+            "image": "wonderwoman.png",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos accusamus, dolore aspernatur totam quos doloremque officia itaque nemo at earum."
+        },
+        {
+            "name": "Robin",
+            "image": "robin.png",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos accusamus, dolore aspernatur totam quos doloremque officia itaque nemo at earum."
+        }
+    ],
+    "marvel-heroes": [
+        {
+            "name": "Black Panther",
+            "image": "black-panther.png",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos accusamus, dolore aspernatur totam quos doloremque officia itaque nemo at earum."
+        },
+        {
+            "name": "Captain America",
+            "image": "captain-america.png",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos accusamus, dolore aspernatur totam quos doloremque officia itaque nemo at earum."
+        },
+        {
+            "name": "Thor",
+            "image": "thor.png",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos accusamus, dolore aspernatur totam quos doloremque officia itaque nemo at earum."
+        },
+        {
+            "name": "Ironman",
+            "image": "ironman.png",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos accusamus, dolore aspernatur totam quos doloremque officia itaque nemo at earum."
+        },
+        {
+            "name": "Hulk",
+            "image": "hulk.png",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos accusamus, dolore aspernatur totam quos doloremque officia itaque nemo at earum."
+        }
+    ]
+}
