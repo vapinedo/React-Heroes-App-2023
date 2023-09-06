@@ -1,5 +1,5 @@
 import HeroCard from "../../components/HeroCard/HeroCard";
-import useDCHeroesData from "../../../../core/react-query/hooks/useDCHeroesData";
+import useMarvelHeroesData from "../../../../core/react-query/hooks/useMarvelHeroesData";
 
 const MarvelHeroesPage = () => {
 
@@ -11,7 +11,7 @@ const MarvelHeroesPage = () => {
     console.log("Doing side effect when network rquest gets error", error);
   };
   
-  const { isLoading, data, isError, error } = useDCHeroesData(onSuccess, onError);
+  const { isLoading, data, isError, error } = useMarvelHeroesData(onSuccess, onError);
 
   if (isLoading) {
     return <h2>Loading...</h2>
@@ -24,9 +24,7 @@ const MarvelHeroesPage = () => {
   return (
     <>
       <header>
-        <h2>Marvel Heroes 
-          <small className="text-muted"> :: page</small>
-        </h2>
+        <h2>Marvel Heroes</h2>
       </header>
       <hr />
 

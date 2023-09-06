@@ -24,9 +24,7 @@ const DCHeroesPage = () => {
   return (
     <>
       <header>
-        <h2>DC Heroes 
-          <small className="text-muted"> :: page</small>
-        </h2>
+        <h2>DC Heroes</h2>
       </header>
       <hr />
 

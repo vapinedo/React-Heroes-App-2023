@@ -1,3 +1,15 @@
-Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-Omnis eos accusamus, dolore aspernatur totam quos doloremque officia itaque nemo at earum.
-accusantium aliquid ducimus, vel error similique expedita? Vel, nam.
+import DCHeroesPage from "./pages/DCHeroes/DCHeroesPage";
+import MarvelHeroesPage from "./pages/MarvelHeroes/MarvelHeroesPage";
+
+export const heroesRoutes = [
+  {
+    name: 'DC Heroes',
+    path: '/dc-heroes',
+    element: <DCHeroesPage />,
+  },
+  {
+    name: 'Marvel Heroes',
+    path: '/marvel-heroes',
+    element: <MarvelHeroesPage />,
+  }
+];
