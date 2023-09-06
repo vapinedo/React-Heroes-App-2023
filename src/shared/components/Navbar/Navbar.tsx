@@ -15,7 +15,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link to="/dc-heroes" className="nav-link active">DC</Link>
+                            <Link to="/dc-heroes" className="nav-link">DC</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/marvel-heroes" className="nav-link">Marvel</Link>

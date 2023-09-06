@@ -1,5 +1,5 @@
 {
-    "dc-heroes": [
+    "dc_heroes": [
         {
             "name": "Batman",
             "image": "batman.png",
@@ -26,7 +26,7 @@
             "price": 10
         }
     ],
-    "marvel-heroes": [
+    "marvel_heroes": [
         {
             "name": "Black Panther",
             "image": "black-panther.png",

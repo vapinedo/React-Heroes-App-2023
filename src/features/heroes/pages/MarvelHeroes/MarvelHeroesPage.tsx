@@ -1,25 +1,23 @@
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import HeroCard from "../../components/HeroCard/HeroCard";
-import useMarvelHeroesData from "../../../../core/react-query/hooks/useMarvelHeroesData";
+import { fetchMarvelHeroes } from "../../../../core/features/MarvelHeroesSlice";
 
 const MarvelHeroesPage = () => {
+  const dispatch = useDispatch();
+  const { data, error, isLoading} = useSelector((state) => state.MarvelHeroes);
 
-  const onSuccess = (data: any) => {
-    // console.log("Doing side effect when network request gets data", data);
-  };
-  
-  const onError = (error: any) => {
-    // console.log("Doing side effect when network rquest gets error", error);
-  };
-  
-  const { isLoading, data, isError, error } = useMarvelHeroesData(onSuccess, onError);
+  useEffect(() => {
+    dispatch(fetchMarvelHeroes());
+  }, []);
 
   if (isLoading) {
     return <h2>Loading...</h2>
   }
 
-  if (isError) {
-    return <div className="alert alert-danger" role="alert">{error.message}</div>
-  }
+  if (error) {
+    return <div className="alert alert-danger" role="alert">Error</div>
+  }  
 
   return (
     <>
@@ -29,7 +27,7 @@ const MarvelHeroesPage = () => {
       <hr />
 
       <div className="row row-cols-1 row-cols-md-4 g-4">
-        {data.map((hero: any) => <HeroCard key={hero.name} hero={hero} />)}
+        {!isLoading && data.length && data.map((hero: any) => <HeroCard key={hero.name} hero={hero} />)}
       </div>    
     </>
   )
