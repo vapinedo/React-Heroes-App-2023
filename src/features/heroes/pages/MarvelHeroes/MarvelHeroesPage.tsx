@@ -1,17 +1,17 @@
 import HeroCard from "../../components/HeroCard/HeroCard";
-import useDCHeroesData from "../../../../core/react-query/hooks/useDCHeroesData";
+import useMarvelHeroesData from "../../../../core/react-query/hooks/useMarvelHeroesData";
 
-const DCHeroesPage = () => {
+const MarvelHeroesPage = () => {
 
   const onSuccess = (data: any) => {
-    console.log("Doing side effect when network request gets data", data);
+    // console.log("Doing side effect when network request gets data", data);
   };
   
   const onError = (error: any) => {
-    console.log("Doing side effect when network rquest gets error", error);
+    // console.log("Doing side effect when network rquest gets error", error);
   };
   
-  const { isLoading, data, isError, error } = useDCHeroesData(onSuccess, onError);
+  const { isLoading, data, isError, error } = useMarvelHeroesData(onSuccess, onError);
 
   if (isLoading) {
     return <h2>Loading...</h2>
@@ -24,7 +24,7 @@ const DCHeroesPage = () => {
   return (
     <>
       <header>
-        <h2>DC Heroes</h2>
+        <h2>Marvel Heroes</h2>
       </header>
       <hr />
 
@@ -34,4 +34,4 @@ const DCHeroesPage = () => {
     </>
   )
 }
-export default DCHeroesPage
+export default MarvelHeroesPage

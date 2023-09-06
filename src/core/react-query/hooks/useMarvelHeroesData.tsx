@@ -1,12 +1,12 @@
 import axios from "axios"
 import { useQuery } from "react-query"
 
-const fetchFn = () => axios.get(import.meta.env.VITE_MARVEL_HEROES);
+const queryFn = () => axios.get(import.meta.env.VITE_MARVEL_HEROES);
 
 const useMarvelHeroesData = (onSuccess: any, onError: any) => {
-    return useQuery(
+    const queryData = useQuery(
         "marvel-heroes",
-        fetchFn,
+        queryFn,
         {
             onError,
             onSuccess,
@@ -16,6 +16,7 @@ const useMarvelHeroesData = (onSuccess: any, onError: any) => {
             }            
         }
     );
+    return queryData;
 }
 
 export default useMarvelHeroesData

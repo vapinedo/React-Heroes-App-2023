@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./modules/shared/components/Navbar/Navbar";
-import { loadRoutes } from "./modules/shared/helpers/loadRoutes";
-import HomePage from "./modules/features/home/pages/Home/HomePage";
-import { heroesRoutes } from "./modules/features/heroes/HeroesRoutes";
+import Navbar from "./shared/components/Navbar/Navbar";
+import { loadRoutes } from "./shared/helpers/loadRoutes";
+import HomePage from "./features/home/pages/Home/HomePage";
+import { heroesRoutes } from "./features/heroes/HeroesRoutes";
 
 export const AppRoutes = () => {
     return (

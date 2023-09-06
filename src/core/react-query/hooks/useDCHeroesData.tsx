@@ -1,12 +1,12 @@
 import axios from "axios"
 import { useQuery } from "react-query"
 
-const fetchFn = () => axios.get(import.meta.env.VITE_DC_HEROES);
+const queryFn = () => axios.get(import.meta.env.VITE_DC_HEROES);
 
 const useDCHeroesData = (onSuccess: any, onError: any) => {
-    return useQuery(
+    const queryData =  useQuery(
         "dc-heroes",
-        fetchFn,
+        queryFn,
         {
             onError,
             onSuccess,
@@ -16,6 +16,7 @@ const useDCHeroesData = (onSuccess: any, onError: any) => {
             }            
         }
     );
+    return queryData;
 }
 
 export default useDCHeroesData
